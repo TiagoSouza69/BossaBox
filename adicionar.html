@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" lang="pt-BR">   
+      <script src="jquery-3.5.1.js"></script>
+      <script src="index.js"></script>
+    </head>
+    <body>
+        <form id="frmCadastro">
+            <ul>
+                <li>
+                    <label for="id">id:</label><br>
+                    <input type="number" id="id"/>
+                </li>
+                <li>
+                    <label for="title">title:</label><br>
+                    <input type="text" id="title"/>
+                </li>
+                <li>
+                    <label for="link">link:</label><br>
+                    <input type="url" id="link"/>
+                </li>
+                <li>
+                    <label for="desc">description:</label><br>
+                    <input type="textarea" id="desc"/>
+                </li>
+                <li>
+                    <label for="tag">tags:</label><br>
+                    <input type="text" id="tgs"/>
+                </li>
+                <li>   
+                    <button type="button" id="btnSalvar" onclick="adicionar()">Add Tool</button> 
+                    <button type="button" id="btnretornar" onclick="window.location.href='index2.html'">Return</button>
+                </li>
+            </ul>
+        </form>
+     
+        
+    </body>
+</html> 
