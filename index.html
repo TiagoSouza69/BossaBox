@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" lang="pt-BR">   
+      <link rel="stylesheet" href="index.css">
+      <link rel="preconnect" href="http://localhost:3000/tools">
+      <script src="jquery-3.5.1.js"></script>
+      <script src="index.js"></script>
+      <title>Página Web</title>
+
+    </head>
+    <body>
+         <h1>VUTTR</h1>
+         <h2>Very Useful Tools to Remember</h2>
+         
+         <form><input type="search" id="pesquisa"  placeholder="Seach" list="lista">
+          <input type="checkbox" id="checar"><label>seach in tags only</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button"
+          onclick="window.location.href='adicionar.html'" id="adicionar">+add</button><button type="button" id="retirar" onclick="window.location.href='remove.html'">Remover</button></form>
+         <div id="ferramentas"></div>
+         <script type = "text/javascript">
+         fetch('http://localhost:3000/tools')
+         .then(response => response.json())
+         .then(json => {
+           const div = document.getElementById("ferramentas");
+           div.innerHTML = JSON.stringify(json);
+         } )
+                
+ </script>
+   <datalist id="lista">
+    <option value="id: 1, title: Notion"></option>
+    <option value="id 2, title : json-server"></option>
+    <option value="id 3, title : fastify"></option> 
+
+  </datalist>
+</datalist>
+    </body>
+</html> 
