@@ -1,0 +1,53 @@
+body{
+    background-color: #ebeaed;
+    text-align: justify all;
+}
+h1{
+    margin-left: 500px;
+}
+h2{
+    margin-left: 500px;
+}
+
+#pesquisa{
+    margin-left: 500px;
+}
+#adicionar{
+    margin-bottom: 700px;
+}
+#ferramentas{
+  position: absolute;
+  top: 200px;
+  margin-left: 500px;
+  margin-right: 700px;
+  border-color: black;
+  border: thick  groove  rgb(0, 0, 0);
+  background-color: white;
+}
+#ferramentas1{
+    position: absolute;
+    top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-color: black;
+    border: thick  groove  rgb(0, 0, 0);
+    background-color: white;
+  }
+  #ferramentas2{
+    position: absolute;
+    top: 360px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-color: black;
+    border: thick  groove  rgb(0, 0, 0);
+    background-color: white;
+  }
+  #ferramentas3{
+    position: absolute;
+    top: 540px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-color: black;
+    border: thick  groove  rgb(0, 0, 0);
+    background-color: white;
+  }
